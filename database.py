@@ -2,8 +2,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 DATABASE_URL = "postgresql://hrms:rTqCDIwq2OP1QY8GkCqztTn38Tvmf11s@dpg-d6q4kcnkijhs73dsbo5g-a/hrms_lazx"
-e
-ngine = create_engine(DATABASE_URL, pool_pre_ping=True)
+
+engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 
 SessionLocal = sessionmaker(
     autocommit=False,
