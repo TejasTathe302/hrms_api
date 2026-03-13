@@ -11,7 +11,7 @@ app = FastAPI(title="HRMS Lite", version="1.0.0")
 # CORS middleware for React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://hrms-ui-chi.vercel.app/"],
+    allow_origins=["https://hrms-ui-chi.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
